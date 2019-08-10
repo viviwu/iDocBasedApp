@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DEDD58522FE8CAF0080266F /* XAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58422FE8CAF0080266F /* XAppDelegate.m */; };
-		0DEDD58822FE8CAF0080266F /* XDocumnetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58722FE8CAF0080266F /* XDocumnetViewController.m */; };
+		0DEDD58822FE8CAF0080266F /* XDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58722FE8CAF0080266F /* XDocumentViewController.m */; };
 		0DEDD58B22FE8CAF0080266F /* XDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58A22FE8CAF0080266F /* XDocument.m */; };
 		0DEDD58D22FE8CB00080266F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD58C22FE8CB00080266F /* Assets.xcassets */; };
 		0DEDD59022FE8CB00080266F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD58E22FE8CB00080266F /* Main.storyboard */; };
@@ -42,8 +42,8 @@
 		0DEDD58022FE8CAF0080266F /* iDocBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEDD58322FE8CAF0080266F /* XAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppDelegate.h; sourceTree = "<group>"; };
 		0DEDD58422FE8CAF0080266F /* XAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppDelegate.m; sourceTree = "<group>"; };
-		0DEDD58622FE8CAF0080266F /* XDocumnetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDocumnetViewController.h; sourceTree = "<group>"; };
-		0DEDD58722FE8CAF0080266F /* XDocumnetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDocumnetViewController.m; sourceTree = "<group>"; };
+		0DEDD58622FE8CAF0080266F /* XDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDocumentViewController.h; sourceTree = "<group>"; };
+		0DEDD58722FE8CAF0080266F /* XDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDocumentViewController.m; sourceTree = "<group>"; };
 		0DEDD58922FE8CAF0080266F /* XDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDocument.h; sourceTree = "<group>"; };
 		0DEDD58A22FE8CAF0080266F /* XDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDocument.m; sourceTree = "<group>"; };
 		0DEDD58C22FE8CB00080266F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 				0DEDD58422FE8CAF0080266F /* XAppDelegate.m */,
 				0DEDD5B622FE8DA90080266F /* XDocumentWindowController.h */,
 				0DEDD5B722FE8DA90080266F /* XDocumentWindowController.m */,
-				0DEDD58622FE8CAF0080266F /* XDocumnetViewController.h */,
-				0DEDD58722FE8CAF0080266F /* XDocumnetViewController.m */,
+				0DEDD58622FE8CAF0080266F /* XDocumentViewController.h */,
+				0DEDD58722FE8CAF0080266F /* XDocumentViewController.m */,
 				0DEDD5FE22FEA2E60080266F /* XTabbedWindow.h */,
 				0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */,
 				0DEDD58922FE8CAF0080266F /* XDocument.h */,
@@ -292,7 +292,7 @@
 				0DEDD60022FEA2E60080266F /* XTabbedWindow.m in Sources */,
 				0DEDD5B922FE8DA90080266F /* XDocumentWindowController.m in Sources */,
 				0DEDD58B22FE8CAF0080266F /* XDocument.m in Sources */,
-				0DEDD58822FE8CAF0080266F /* XDocumnetViewController.m in Sources */,
+				0DEDD58822FE8CAF0080266F /* XDocumentViewController.m in Sources */,
 				0DEDD59322FE8CB00080266F /* main.m in Sources */,
 				0DEDD58522FE8CAF0080266F /* XAppDelegate.m in Sources */,
 			);

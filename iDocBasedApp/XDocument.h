@@ -10,14 +10,14 @@
 
 extern NSString * const xDocUTI;
 
-@class XDocumnetViewController;
+@class XDocumentViewController;
 @class XDocumentWindowController;
 
 @interface XDocument : NSDocument
 
 @property (nonatomic, copy) NSString * text;
 @property (nonatomic) XDocumentWindowController * documentWindowController;
-@property (nonatomic) XDocumnetViewController * documnetViewController;
+@property (nonatomic) XDocumentViewController * documnetViewController;
 
 - (void)updateTextView:(NSTextView *)inTextView;
 

@@ -1,5 +1,5 @@
 //
-//  XDocumnetViewController.h
+//  XDocumentViewController.h
 //  iDocBasedApp
 //
 //  Created by vivi wu on 2017/8/10.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface XDocumnetViewController : NSViewController
+@interface XDocumentViewController : NSViewController
 
 @property (unsafe_unretained) IBOutlet NSTextView *textView;
 

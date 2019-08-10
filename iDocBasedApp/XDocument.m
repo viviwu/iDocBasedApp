@@ -7,7 +7,7 @@
 //
 
 #import "XDocument.h"
-#import "XDocumnetViewController.h"
+#import "XDocumentViewController.h"
 #import "XDocumentWindowController.h"
 
 NSString * const xDocUTI = @"com.vivi.xdoc";
@@ -41,7 +41,7 @@ NSString * const xDocUTI = @"com.vivi.xdoc";
     [self addWindowController:_documentWindowController];
     
     if (!_documnetViewController) {
-        _documnetViewController = (XDocumnetViewController *)_documentWindowController.contentViewController;
+        _documnetViewController = (XDocumentViewController *)_documentWindowController.contentViewController;
     }
 }
 
@@ -53,10 +53,10 @@ NSString * const xDocUTI = @"com.vivi.xdoc";
     }
     return _documentWindowController;
 }
-- (XDocumnetViewController *)documnetViewController
+- (XDocumentViewController *)documnetViewController
 {
     if (!_documnetViewController) {
-        _documnetViewController = (XDocumnetViewController *)_documentWindowController.contentViewController;
+        _documnetViewController = (XDocumentViewController *)_documentWindowController.contentViewController;
     }
     return _documnetViewController;
 }

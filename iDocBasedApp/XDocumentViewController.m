@@ -1,21 +1,21 @@
 //
-//  XDocumnetViewController.m
+//  XDocumentViewController.m
 //  iDocBasedApp
 //
 //  Created by vivi wu on 2017/8/10.
 //  Copyright © 2017 vivi wu. All rights reserved.
 //
 
-#import "XDocumnetViewController.h"
+#import "XDocumentViewController.h"
 #import "XDocumentWindowController.h"
 #import "XDocument.h"
 
-@interface XDocumnetViewController ()<NSTextViewDelegate>
+@interface XDocumentViewController ()<NSTextViewDelegate>
 
 
 @end
 
-@implementation XDocumnetViewController
+@implementation XDocumentViewController
 
 - (XDocument *)ourDocument
 {
@@ -28,7 +28,7 @@
     
     // Do any additional setup after loading the view.
     self.textView.delegate = self;
-     [self.textView setAllowsUndo:YES];
+    [self.textView setAllowsUndo:YES];
 }
 
 - (void)viewWillAppear
