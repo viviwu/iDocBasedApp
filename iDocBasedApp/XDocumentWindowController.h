@@ -1,5 +1,5 @@
 //
-//  Document.h
+//  XDocumentWindowController.h
 //  iDocBasedApp
 //
 //  Created by vivi wu on 2019/8/10.
@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Document : NSDocument
+NS_ASSUME_NONNULL_BEGIN
 
+@interface XDocumentWindowController : NSWindowController
 
 @end
 
+NS_ASSUME_NONNULL_END

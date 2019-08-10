@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  XAppDelegate.h
 //  iDocBasedApp
 //
 //  Created by vivi wu on 2019/8/10.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface XAppDelegate : NSObject <NSApplicationDelegate>
 
 
 @end

@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DEDD58522FE8CAF0080266F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58422FE8CAF0080266F /* AppDelegate.m */; };
-		0DEDD58822FE8CAF0080266F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58722FE8CAF0080266F /* ViewController.m */; };
-		0DEDD58B22FE8CAF0080266F /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58A22FE8CAF0080266F /* Document.m */; };
+		0DEDD58522FE8CAF0080266F /* XAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58422FE8CAF0080266F /* XAppDelegate.m */; };
+		0DEDD58822FE8CAF0080266F /* XDocumnetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58722FE8CAF0080266F /* XDocumnetViewController.m */; };
+		0DEDD58B22FE8CAF0080266F /* XDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58A22FE8CAF0080266F /* XDocument.m */; };
 		0DEDD58D22FE8CB00080266F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD58C22FE8CB00080266F /* Assets.xcassets */; };
 		0DEDD59022FE8CB00080266F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD58E22FE8CB00080266F /* Main.storyboard */; };
 		0DEDD59322FE8CB00080266F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD59222FE8CB00080266F /* main.m */; };
 		0DEDD59E22FE8CB00080266F /* iDocBasedAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD59D22FE8CB00080266F /* iDocBasedAppTests.m */; };
 		0DEDD5A922FE8CB00080266F /* iDocBasedAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD5A822FE8CB00080266F /* iDocBasedAppUITests.m */; };
+		0DEDD5B922FE8DA90080266F /* XDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD5B722FE8DA90080266F /* XDocumentWindowController.m */; };
+		0DEDD5BC22FE92DA0080266F /* File.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD5BB22FE92DA0080266F /* File.icns */; };
+		0DEDD60022FEA2E60080266F /* XTabbedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */; };
+		0DEDD60722FEC0BC0080266F /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD60522FEC0BC0080266F /* menu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +40,12 @@
 
 /* Begin PBXFileReference section */
 		0DEDD58022FE8CAF0080266F /* iDocBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DEDD58322FE8CAF0080266F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0DEDD58422FE8CAF0080266F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0DEDD58622FE8CAF0080266F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0DEDD58722FE8CAF0080266F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0DEDD58922FE8CAF0080266F /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		0DEDD58A22FE8CAF0080266F /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		0DEDD58322FE8CAF0080266F /* XAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppDelegate.h; sourceTree = "<group>"; };
+		0DEDD58422FE8CAF0080266F /* XAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppDelegate.m; sourceTree = "<group>"; };
+		0DEDD58622FE8CAF0080266F /* XDocumnetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDocumnetViewController.h; sourceTree = "<group>"; };
+		0DEDD58722FE8CAF0080266F /* XDocumnetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDocumnetViewController.m; sourceTree = "<group>"; };
+		0DEDD58922FE8CAF0080266F /* XDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDocument.h; sourceTree = "<group>"; };
+		0DEDD58A22FE8CAF0080266F /* XDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDocument.m; sourceTree = "<group>"; };
 		0DEDD58C22FE8CB00080266F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DEDD58F22FE8CB00080266F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DEDD59122FE8CB00080266F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +57,12 @@
 		0DEDD5A422FE8CB00080266F /* iDocBasedAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDocBasedAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEDD5A822FE8CB00080266F /* iDocBasedAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDocBasedAppUITests.m; sourceTree = "<group>"; };
 		0DEDD5AA22FE8CB00080266F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DEDD5B622FE8DA90080266F /* XDocumentWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDocumentWindowController.h; sourceTree = "<group>"; };
+		0DEDD5B722FE8DA90080266F /* XDocumentWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDocumentWindowController.m; sourceTree = "<group>"; };
+		0DEDD5BB22FE92DA0080266F /* File.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = File.icns; sourceTree = "<group>"; };
+		0DEDD5FE22FEA2E60080266F /* XTabbedWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTabbedWindow.h; sourceTree = "<group>"; };
+		0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTabbedWindow.m; sourceTree = "<group>"; };
+		0DEDD60522FEC0BC0080266F /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +113,22 @@
 		0DEDD58222FE8CAF0080266F /* iDocBasedApp */ = {
 			isa = PBXGroup;
 			children = (
-				0DEDD58322FE8CAF0080266F /* AppDelegate.h */,
-				0DEDD58422FE8CAF0080266F /* AppDelegate.m */,
-				0DEDD58622FE8CAF0080266F /* ViewController.h */,
-				0DEDD58722FE8CAF0080266F /* ViewController.m */,
-				0DEDD58922FE8CAF0080266F /* Document.h */,
-				0DEDD58A22FE8CAF0080266F /* Document.m */,
+				0DEDD58322FE8CAF0080266F /* XAppDelegate.h */,
+				0DEDD58422FE8CAF0080266F /* XAppDelegate.m */,
+				0DEDD5B622FE8DA90080266F /* XDocumentWindowController.h */,
+				0DEDD5B722FE8DA90080266F /* XDocumentWindowController.m */,
+				0DEDD58622FE8CAF0080266F /* XDocumnetViewController.h */,
+				0DEDD58722FE8CAF0080266F /* XDocumnetViewController.m */,
+				0DEDD5FE22FEA2E60080266F /* XTabbedWindow.h */,
+				0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */,
+				0DEDD58922FE8CAF0080266F /* XDocument.h */,
+				0DEDD58A22FE8CAF0080266F /* XDocument.m */,
 				0DEDD58C22FE8CB00080266F /* Assets.xcassets */,
+				0DEDD60522FEC0BC0080266F /* menu.png */,
 				0DEDD58E22FE8CB00080266F /* Main.storyboard */,
 				0DEDD59122FE8CB00080266F /* Info.plist */,
 				0DEDD59222FE8CB00080266F /* main.m */,
+				0DEDD5BB22FE92DA0080266F /* File.icns */,
 				0DEDD59422FE8CB00080266F /* iDocBasedApp.entitlements */,
 			);
 			path = iDocBasedApp;
@@ -198,11 +214,17 @@
 		0DEDD57822FE8CAF0080266F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = X;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "vivi wu";
 				TargetAttributes = {
 					0DEDD57F22FE8CAF0080266F = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					0DEDD59822FE8CB00080266F = {
 						CreatedOnToolsVersion = 10.3;
@@ -239,7 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEDD60722FEC0BC0080266F /* menu.png in Resources */,
 				0DEDD58D22FE8CB00080266F /* Assets.xcassets in Resources */,
+				0DEDD5BC22FE92DA0080266F /* File.icns in Resources */,
 				0DEDD59022FE8CB00080266F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DEDD58B22FE8CAF0080266F /* Document.m in Sources */,
-				0DEDD58822FE8CAF0080266F /* ViewController.m in Sources */,
+				0DEDD60022FEA2E60080266F /* XTabbedWindow.m in Sources */,
+				0DEDD5B922FE8DA90080266F /* XDocumentWindowController.m in Sources */,
+				0DEDD58B22FE8CAF0080266F /* XDocument.m in Sources */,
+				0DEDD58822FE8CAF0080266F /* XDocumnetViewController.m in Sources */,
 				0DEDD59322FE8CB00080266F /* main.m in Sources */,
-				0DEDD58522FE8CAF0080266F /* AppDelegate.m in Sources */,
+				0DEDD58522FE8CAF0080266F /* XAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -419,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -439,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qway.mac.test.iDocBasedApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qway.mac.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -457,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qway.mac.test.iDocBasedApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qway.mac.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
