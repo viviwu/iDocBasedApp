@@ -36,7 +36,11 @@
  */
 - (IBAction)menuAction:(NSToolbarItem *)sender {
     NSLog(@"%s", __func__);
-    [self.toolbar runCustomizationPalette:sender];
+//    [self.toolbar runCustomizationPalette:sender];
+}
+
+- (IBAction)exportAction:(NSToolbarItem *)sender {
+    NSLog(@"%s", __func__);
 }
 
 @end

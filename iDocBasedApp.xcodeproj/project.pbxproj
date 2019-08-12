@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D72E8B82301A01F00FE5197 /* export.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D72E8B72301A01F00FE5197 /* export.png */; };
 		0DEDD58522FE8CAF0080266F /* XAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58422FE8CAF0080266F /* XAppDelegate.m */; };
 		0DEDD58822FE8CAF0080266F /* XDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58722FE8CAF0080266F /* XDocumentViewController.m */; };
 		0DEDD58B22FE8CAF0080266F /* XDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD58A22FE8CAF0080266F /* XDocument.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D72E8B72301A01F00FE5197 /* export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = export.png; sourceTree = "<group>"; };
 		0DEDD58022FE8CAF0080266F /* iDocBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEDD58322FE8CAF0080266F /* XAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppDelegate.h; sourceTree = "<group>"; };
 		0DEDD58422FE8CAF0080266F /* XAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				0DEDD627230136580080266F /* XGraphUtil.m */,
 				0DEDD58C22FE8CB00080266F /* Assets.xcassets */,
 				0DEDD60522FEC0BC0080266F /* menu.png */,
+				0D72E8B72301A01F00FE5197 /* export.png */,
 				0DEDD58E22FE8CB00080266F /* Main.storyboard */,
 				0DEDD59122FE8CB00080266F /* Info.plist */,
 				0DEDD59222FE8CB00080266F /* main.m */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DEDD60722FEC0BC0080266F /* menu.png in Resources */,
+				0D72E8B82301A01F00FE5197 /* export.png in Resources */,
 				0DEDD58D22FE8CB00080266F /* Assets.xcassets in Resources */,
 				0DEDD5BC22FE92DA0080266F /* File.icns in Resources */,
 				0DEDD59022FE8CB00080266F /* Main.storyboard in Resources */,

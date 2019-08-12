@@ -688,19 +688,22 @@
                     <window key="window" title="XTabbedWindow" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ckk-yw-fiv" customClass="XTabbedWindow">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="960" height="540"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <toolbar key="toolbar" implicitIdentifier="862DE09E-AA9E-4E8B-BA86-2C96FE6E17B2" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="glY-T8-ng5">
+                        <toolbar key="toolbar" implicitIdentifier="862DE09E-AA9E-4E8B-BA86-2C96FE6E17B2" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="glY-T8-ng5">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="9Pn-fT-exb"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Y0t-fb-7b4"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="XnQ-Fc-pSq"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="01T-wl-STm"/>
-                                <toolbarItem implicitItemIdentifier="4C038A6D-883D-47F3-B550-8E88CE0675B7" label="Menu" paletteLabel="Menu" tag="-1" image="menu" id="mA0-sk-EVy">
-                                    <size key="minSize" width="96" height="96"/>
-                                    <size key="maxSize" width="96" height="96"/>
+                                <toolbarItem implicitItemIdentifier="4C038A6D-883D-47F3-B550-8E88CE0675B7" label="Menu" paletteLabel="Menu" tag="-1" image="menu" sizingBehavior="auto" id="mA0-sk-EVy">
                                     <connections>
                                         <action selector="menuAction:" target="jGA-0Y-lOj" id="xju-Ek-Wou"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="BE794834-D3D0-496F-8381-8C89443838AF" label="Export" paletteLabel="Export" tag="-1" image="export" sizingBehavior="auto" id="IgL-ee-EJp">
+                                    <connections>
+                                        <action selector="exportAction:" target="jGA-0Y-lOj" id="rg6-FU-Dkf"/>
                                     </connections>
                                 </toolbarItem>
                             </allowedToolbarItems>
@@ -708,6 +711,7 @@
                                 <toolbarItem reference="9Pn-fT-exb"/>
                                 <toolbarItem reference="Y0t-fb-7b4"/>
                                 <toolbarItem reference="01T-wl-STm"/>
+                                <toolbarItem reference="IgL-ee-EJp"/>
                                 <toolbarItem reference="mA0-sk-EVy"/>
                             </defaultToolbarItems>
                         </toolbar>
@@ -729,22 +733,22 @@
             <objects>
                 <viewController id="5gI-5U-AMq" customClass="XDocumentViewController" sceneMemberID="viewController">
                     <view key="view" id="ERx-hH-rdd">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiC-Bm-Rj5">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="BVJ-zF-Nge">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="jrO-by-hDT">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="480" height="270"/>
-                                            <size key="maxSize" width="480" height="10000000"/>
+                                            <size key="minSize" width="960" height="540"/>
+                                            <size key="maxSize" width="960" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
@@ -754,12 +758,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="wXS-aY-f5q">
-                                    <rect key="frame" x="464" y="0.0" width="16" height="270"/>
+                                    <rect key="frame" x="944" y="0.0" width="16" height="540"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-c9-G0C">
-                                <rect key="frame" x="116" y="124" width="248" height="22"/>
+                                <rect key="frame" x="356" y="259" width="248" height="22"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Your document contents here" id="Cc7-nU-5Mv">
                                     <font key="font" metaFont="system" size="18"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -782,10 +786,11 @@
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="62" y="843"/>
         </scene>
     </scenes>
     <resources>
-        <image name="menu" width="96" height="96"/>
+        <image name="export" width="48" height="48"/>
+        <image name="menu" width="48" height="48"/>
     </resources>
 </document>

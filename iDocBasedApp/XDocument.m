@@ -142,8 +142,15 @@ NSString * const xDocUTI = @"com.vivi.xdoc";
  */
 - (IBAction)saveDocumentAs:(nullable id)sender
 {
-    
+    NSLog(@"%s -> [The action of the File menu's Save As...~]", __func__);
 }
+
+/* The action of the File menu's Export... item in a document-based application (actually, the menu item goes by different names in different applications; check the Human Interface Guidelines). The default implementation of this method merely invokes [self runModalSavePanelForSaveOperation:NSSaveToOperation delegate:nil didSaveSelector:NULL contextInfo:NULL].
+ */
+- (IBAction)saveDocumentTo:(nullable id)sender{
+    NSLog(@"%s -> [The action of the File menu's Export... ]", __func__);
+}
+
 #pragma mark *** PDF Creation ***
 
 /* 基于文档的应用程序中“文件”菜单的“导出为PDF ...”项的操作。 此方法的默认实现仅调用[self printDocumentWithSettings：@ {NSPrintJobDisposition：NSPrintSaveJob} showPrintPanel：NO delegate：nil didPrintSelector：NULL contextInfo：NULL]。
