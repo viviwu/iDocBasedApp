@@ -6,9 +6,11 @@
 //  Copyright © 2017 vivi wu. All rights reserved.
 //
 
+ 
 #import "XDocument.h"
 #import "XDocumentViewController.h"
 #import "XDocumentWindowController.h"
+#import "XGraphUtil.h"
 
 NSString * const xDocUTI = @"com.vivi.xdoc";
 
@@ -119,5 +121,78 @@ NSString * const xDocUTI = @"com.vivi.xdoc";
     return YES;
 }
 
+
+
+#pragma mark *** Printing ***
+
+/*  基于文档的应用程序中“文件”菜单的“页面设置...”项的操作。 此方法的默认实现调用[self printInfo]，生成print info对象的副本，并调用[self runModalPageLayoutWithPrintInfo：printInfoCopy delegate：aPrivateDelegate didRunSelector：aSelectorForAPrivateMethod contextInfo：privateContextInfo]。 如果用户确定页面布局面板，则调用[self shouldChangePrintInfo：printInfoCopy]。 如果返回YES，则调用[self setPrintInfo：printInfoCopy]。
+ */
+- (IBAction)runPageLayout:(nullable id)sender
+{
+    
+}
+
+/* 基于文档的应用程序中“文件”菜单的“打印...”项的操作。 此方法的默认实现仅调用[self printDocumentWithSettings：[NSDictionary dictionary] showPrintPanel：YES delegate：nil didPrintSelector：NULL contextInfo：NULL]。
+ */
+- (IBAction)printDocument:(nullable id)sender{
+    
+}
+
+/* The action of the File menu's Save As... item in a document-based application. The default implementation of this method merely invokes [self runModalSavePanelForSaveOperation:NSSaveAsOperation delegate:nil didSaveSelector:NULL contextInfo:NULL].
+ */
+- (IBAction)saveDocumentAs:(nullable id)sender
+{
+    
+}
+#pragma mark *** PDF Creation ***
+
+/* 基于文档的应用程序中“文件”菜单的“导出为PDF ...”项的操作。 此方法的默认实现仅调用[self printDocumentWithSettings：@ {NSPrintJobDisposition：NSPrintSaveJob} showPrintPanel：NO delegate：nil didPrintSelector：NULL contextInfo：NULL]。
+ */
+- (IBAction)saveDocumentToPDF:(nullable id)sender NS_AVAILABLE_MAC(10_9)
+{
+    const char * filename = "filename";
+    CFStringRef path = CFStringCreateWithCString (NULL, filename, kCFStringEncodingUTF8);
+    CFURLRef url = CFURLCreateWithFileSystemPath (NULL, path, kCFURLPOSIXPathStyle, 0);
+    CFRelease (path);
+    NSLog(@"%@", url);
+    CGRect mediaBox = CGRectMake(20, 20, 300, 500);
+    
+    CFMutableDictionaryRef auxiliaryInfo = CFDictionaryCreateMutable(NULL, 0,
+                                                             &kCFTypeDictionaryKeyCallBacks,
+                                                             &kCFTypeDictionaryValueCallBacks);
+    CFDictionarySetValue(auxiliaryInfo, kCGPDFContextTitle, CFSTR("X PDF File"));
+    CFDictionarySetValue(auxiliaryInfo, kCGPDFContextCreator, CFSTR("X Name"));
+    
+    CGContextRef pdfContext = CGPDFContextCreateWithURL(url, &mediaBox, auxiliaryInfo);
+    CFRelease(url);
+    CFRelease(auxiliaryInfo);
+    
+    CFDataRef boxData = CFDataCreate(NULL, (const UInt8 *)&mediaBox, sizeof (CGRect));
+    
+    CFMutableDictionaryRef pageInfo = CFDictionaryCreateMutable(NULL, 0,
+                                                                      &kCFTypeDictionaryKeyCallBacks,
+                                                                      &kCFTypeDictionaryValueCallBacks); // 6
+    CFDictionarySetValue(pageInfo, kCGPDFContextMediaBox, boxData);
+    {
+        CGPDFContextBeginPage (pdfContext, pageInfo); // 7
+    
+//        CGContextDrawPDFPage(pdfContext, page);
+        CGContextRef myContext = [[NSGraphicsContext // 1
+                                   currentContext] graphicsPort];
+        // ********** Your drawing code here ********** // 2
+        CGContextSetRGBFillColor (myContext, 1, 0, 0, 1);// 3
+        CGContextFillRect (myContext, CGRectMake (0, 0, 200, 100 ));// 4
+        CGContextSetRGBFillColor (myContext, 0, 0, 1, .5);// 5
+        CGContextFillRect (myContext, CGRectMake (0, 0, 100, 200));
+        
+        
+        
+        CGPDFContextEndPage (pdfContext);
+    }
+    CFRelease(pdfContext);
+    CFRelease(pageInfo);
+    CFRelease(boxData);
+    
+}
 
 @end

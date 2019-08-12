@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     self.textView.delegate = self;
     [self.textView setAllowsUndo:YES];
+    NSLog(@"%s", __func__);
 }
 
 - (void)viewWillAppear

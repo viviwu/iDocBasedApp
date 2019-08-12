@@ -19,6 +19,7 @@
 		0DEDD5BC22FE92DA0080266F /* File.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD5BB22FE92DA0080266F /* File.icns */; };
 		0DEDD60022FEA2E60080266F /* XTabbedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */; };
 		0DEDD60722FEC0BC0080266F /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DEDD60522FEC0BC0080266F /* menu.png */; };
+		0DEDD628230136580080266F /* XGraphUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDD627230136580080266F /* XGraphUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		0DEDD5FE22FEA2E60080266F /* XTabbedWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTabbedWindow.h; sourceTree = "<group>"; };
 		0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTabbedWindow.m; sourceTree = "<group>"; };
 		0DEDD60522FEC0BC0080266F /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		0DEDD626230136580080266F /* XGraphUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGraphUtil.h; sourceTree = "<group>"; };
+		0DEDD627230136580080266F /* XGraphUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGraphUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				0DEDD5FF22FEA2E60080266F /* XTabbedWindow.m */,
 				0DEDD58922FE8CAF0080266F /* XDocument.h */,
 				0DEDD58A22FE8CAF0080266F /* XDocument.m */,
+				0DEDD626230136580080266F /* XGraphUtil.h */,
+				0DEDD627230136580080266F /* XGraphUtil.m */,
 				0DEDD58C22FE8CB00080266F /* Assets.xcassets */,
 				0DEDD60522FEC0BC0080266F /* menu.png */,
 				0DEDD58E22FE8CB00080266F /* Main.storyboard */,
@@ -292,6 +297,7 @@
 				0DEDD60022FEA2E60080266F /* XTabbedWindow.m in Sources */,
 				0DEDD5B922FE8DA90080266F /* XDocumentWindowController.m in Sources */,
 				0DEDD58B22FE8CAF0080266F /* XDocument.m in Sources */,
+				0DEDD628230136580080266F /* XGraphUtil.m in Sources */,
 				0DEDD58822FE8CAF0080266F /* XDocumentViewController.m in Sources */,
 				0DEDD59322FE8CB00080266F /* main.m in Sources */,
 				0DEDD58522FE8CAF0080266F /* XAppDelegate.m in Sources */,
