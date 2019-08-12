@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     self.textView.delegate = self;
     [self.textView setAllowsUndo:YES];
+    [self.view.window makeFirstResponder:self.textView];
     NSLog(@"%s", __func__);
 }
 

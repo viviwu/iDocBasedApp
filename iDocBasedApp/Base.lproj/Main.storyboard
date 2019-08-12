@@ -679,7 +679,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17" y="-111"/>
+            <point key="canvasLocation" x="11" y="-231"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -696,12 +696,12 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Y0t-fb-7b4"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="XnQ-Fc-pSq"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="01T-wl-STm"/>
-                                <toolbarItem implicitItemIdentifier="4C038A6D-883D-47F3-B550-8E88CE0675B7" label="Menu" paletteLabel="Menu" tag="-1" image="menu" sizingBehavior="auto" id="mA0-sk-EVy">
+                                <toolbarItem implicitItemIdentifier="4C038A6D-883D-47F3-B550-8E88CE0675B7" explicitItemIdentifier="com.vivi.Menu" label="Menu" paletteLabel="Menu" tag="-1" image="menu" sizingBehavior="auto" id="mA0-sk-EVy">
                                     <connections>
                                         <action selector="menuAction:" target="jGA-0Y-lOj" id="xju-Ek-Wou"/>
                                     </connections>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="BE794834-D3D0-496F-8381-8C89443838AF" label="Export" paletteLabel="Export" tag="-1" image="export" sizingBehavior="auto" id="IgL-ee-EJp">
+                                <toolbarItem implicitItemIdentifier="BE794834-D3D0-496F-8381-8C89443838AF" explicitItemIdentifier="com.vivi.export" label="Export" paletteLabel="Export" tag="-1" image="export" sizingBehavior="auto" id="IgL-ee-EJp">
                                     <connections>
                                         <action selector="exportAction:" target="jGA-0Y-lOj" id="rg6-FU-Dkf"/>
                                     </connections>

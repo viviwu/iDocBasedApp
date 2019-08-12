@@ -14,7 +14,14 @@
 
 @implementation XAppDelegate
 
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
+    if (@available(macOS 10.12.2, *)) {
+        NSApplication.sharedApplication.automaticCustomizeTouchBarMenuItemEnabled = YES;
+    } else {
+        // Fallback on earlier versions
+    }
     // Insert code here to initialize your application
     if ([[NSDocumentController sharedDocumentController] documents].count == 0)
     {
