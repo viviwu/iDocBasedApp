@@ -22,6 +22,10 @@
     } else {
         // Fallback on earlier versions
     }
+    [self performSelector:@selector(checkOpenDocument) withObject:nil afterDelay:1];
+}
+
+- (void)checkOpenDocument{
     // Insert code here to initialize your application
     if ([[NSDocumentController sharedDocumentController] documents].count == 0)
     {
@@ -29,7 +33,6 @@
         [[NSDocumentController sharedDocumentController] newDocument:self];
     }
 }
-
 #pragma mark *** Document Creation ***
 /*基于文档的应用程序中“文件”菜单的“新建”项的操作。 此方法的默认实现调用-openUntitledDocumentAndDisplay：error：并且，如果返回nil，则在应用程序模式面板中显示错误。
 */

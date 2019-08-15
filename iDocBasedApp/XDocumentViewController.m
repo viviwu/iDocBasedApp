@@ -52,6 +52,11 @@
     // Update the view, if already loaded.
 }
 
+- (void) printDocument: (id) sender
+{
+    NSPrintOperation * printOperation = [NSPrintOperation printOperationWithView:self.textView];
+    [printOperation runOperationModalForWindow:self.view.window delegate:nil didRunSelector:nil contextInfo:nil];
+}
 
 #pragma mark - NSTextDelegate
 

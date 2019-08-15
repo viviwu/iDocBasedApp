@@ -14,4 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+
+@interface NSSharingService (ActivityType)
+
+@property (readonly, nonatomic, retain) NSString *activityType;
+
+@end
+
+
+
 NS_ASSUME_NONNULL_END

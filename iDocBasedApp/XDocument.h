@@ -23,5 +23,7 @@ extern NSString * const xDocUTI;
 
 - (void)updateTextModel:(NSString *)text;
 
+- (NSURL *) generatePDF;
+
 @end
 

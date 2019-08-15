@@ -134,9 +134,9 @@ NSString * const xDocUTI = @"com.vivi.xdoc";
 
 /* 基于文档的应用程序中“文件”菜单的“打印...”项的操作。 此方法的默认实现仅调用[self printDocumentWithSettings：[NSDictionary dictionary] showPrintPanel：YES delegate：nil didPrintSelector：NULL contextInfo：NULL]。
  */
-- (IBAction)printDocument:(nullable id)sender{
-    
-}
+//- (IBAction)printDocument:(nullable id)sender{
+// 
+//}
 
 /* The action of the File menu's Save As... item in a document-based application. The default implementation of this method merely invokes [self runModalSavePanelForSaveOperation:NSSaveAsOperation delegate:nil didSaveSelector:NULL contextInfo:NULL].
  */
@@ -201,5 +201,68 @@ NSString * const xDocUTI = @"com.vivi.xdoc";
     CFRelease(boxData);
     
 }
+
+
+- (NSURL *) generatePDF
+{
+    NSString * fileName = self.fileURL.lastPathComponent.stringByDeletingPathExtension;
+    NSString * filePath = self.fileURL.URLByDeletingLastPathComponent.absoluteString;
+    NSString * pdfPath = [filePath stringByAppendingPathComponent:fileName];
+    pdfPath = [pdfPath stringByAppendingPathExtension:@"pdf"];
+    NSURL *url = [NSURL fileURLWithPath:pdfPath];
+    NSLog(@"pdfPath: %@", url);
+    // ファイル情報の作成
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
+    [dic setObject:@"PDF Title" forKey:(NSString*)kCGPDFContextTitle];
+    [dic setObject:@"Creator Name" forKey:(NSString*)kCGPDFContextCreator];
+    
+    // コンテキストとファイルの生成
+    // 領域をA4サイズ:595.44px,841.68px(8.27インチ,11.69インチ,72dpi)に指定
+    // NULL指定の場合letterサイズ:612px,792px(8.5インチ,11インチ,72dpi)となる
+    CGRect pageRect = CGRectMake(0, 0, 595.44, 841.68);
+    CGContextRef context = CGPDFContextCreateWithURL((CFURLRef)url,
+                                                     &pageRect, (CFMutableDictionaryRef)dic);
+    
+    // 1ページ目開始
+    CGPDFContextBeginPage(context,(CFMutableDictionaryRef)dic);
+    CGContextSaveGState(context);    //CGGraphicsPushContext(context);
+    
+    //上下反転の対処
+    CGContextTranslateCTM(context, 0, pageRect.size.height);
+    CGContextScaleCTM(context, 1, -1);
+    
+    // テキストを描画
+    NSString *title=@"PDF Documentを作る";
+    [title drawAtPoint:NSMakePoint(10, 10) withAttributes:@{NSFontAttributeName: [NSFont systemFontOfSize:18]}];
+    
+    // 1ページ目終了
+    CGContextRestoreGState(context); //UIGraphicsPopContext
+    CGPDFContextEndPage (context);
+    
+    // 2ページ目開始
+    CGPDFContextBeginPage(context,(CFMutableDictionaryRef)dic);
+    CGContextSaveGState(context);   //UIGraphicsPushContext(context);
+    
+    //上下反転の対処
+    CGContextTranslateCTM(context, 0, pageRect.size.height);
+    CGContextScaleCTM(context, 1, -1);
+    
+    //図形の描画
+    CGContextSetFillColorWithColor(context,[NSColor redColor].CGColor);
+    CGContextFillRect(context,CGRectMake(10,30,100,100));
+    
+    //イメージの描画
+    NSImage *i = [NSImage imageNamed:@"Balloon.png"];
+    [i drawAtPoint:NSMakePoint(100, 200) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:0.65];
+    
+    // 2ページ目終了
+    CGContextSaveGState(context);   //UIGraphicsPopContext();
+    CGPDFContextEndPage (context);
+    
+    CGContextRelease (context);
+    
+    return url;
+}
+
 
 @end

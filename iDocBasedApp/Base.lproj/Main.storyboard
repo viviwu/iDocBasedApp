@@ -679,7 +679,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11" y="-231"/>
+            <point key="canvasLocation" x="-8" y="-298"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -690,7 +690,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="960" height="540"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <toolbar key="toolbar" implicitIdentifier="862DE09E-AA9E-4E8B-BA86-2C96FE6E17B2" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="glY-T8-ng5">
+                        <toolbar key="toolbar" implicitIdentifier="4E724F98-11E0-49F4-893B-C69218C7090B" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="glY-T8-ng5">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="9Pn-fT-exb"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Y0t-fb-7b4"/>
@@ -726,7 +726,7 @@
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="79" y="330"/>
         </scene>
         <!--Document View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -786,7 +786,7 @@
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="843"/>
+            <point key="canvasLocation" x="43" y="1124"/>
         </scene>
     </scenes>
     <resources>
